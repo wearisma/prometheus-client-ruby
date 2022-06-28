@@ -43,7 +43,6 @@ module Prometheus
 
         # WARNING: Our internal store can be replaced later by `with_labels`
         # Everything we do after this point needs to still work if @store gets replaced
-        init_label_set({}) if labels.empty?
       end
 
       protected def replace_internal_store(new_store)
